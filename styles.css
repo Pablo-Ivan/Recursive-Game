@@ -37,12 +37,12 @@
 
   p {
     color: black;
-    font-size: 24px;
+    font-size: 20px;
 }
 
   a {
     text-decoration:none;
-    color: white;
+    color: blue;
 }
 
 a:hover {
