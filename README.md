@@ -1,2 +1,2 @@
 # Recursive-Game
-An unbeatable Alpha-managed game-
+An unbeatable Alpha-managed game.
