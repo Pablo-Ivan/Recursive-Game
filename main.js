@@ -50,7 +50,7 @@ Tablero.prototype.dibujar = function () {
     } 
     else
     {
-      this.celdas[i].innerHTML = '<span style="color:' + ((this.panel[i] == JUGADOR.HUMANO) ? 'red' : 'blue') + ';">' + ((this.panel[i] == JUGADOR.HUMANO) ? '7' : 'O') + '</span>';
+      this.celdas[i].innerHTML = '<span style="color:' + ((this.panel[i] == JUGADOR.HUMANO) ? 'red' : 'blue') + ';">' + ((this.panel[i] == JUGADOR.HUMANO) ? 'X' : 'O') + '</span>';
     }
   }
 };
