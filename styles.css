@@ -1,6 +1,3 @@
-  body { background-color:gray;}
-	h1 {text-align:center;}
-
 	div#tablero {
     width:310px;
     height:310px;
@@ -10,7 +7,6 @@
     margin: 20px auto;
     cursor:pointer;
 }
-
 	div#tablero div {
     width:100px;
     height:100px;
@@ -19,11 +15,9 @@
     font-size: 90px;
     text-align:center;
 }
-
 	div#celda1,div#celda2,div#celda3,div#celda4,div#celda5,div#celda6 {border-bottom: 5px solid black;}
 	div#celda1,div#celda2,div#celda4,div#celda5,div#celda7,div#celda8 {border-right: 5px solid black;}
 	div#tablero > div:hover {background-color:#ddd;}
-
   div#consola {
     width:310px;
     height:35px;
