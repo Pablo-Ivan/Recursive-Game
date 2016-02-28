@@ -109,6 +109,7 @@ Juego.prototype.logica = function (posicion) {
       {
         this.estado = ESTADO.TERMINADO;
         this.mostrarMensaje('¡HAS GANADO!<br/>Click en una celda para comenzar de nuevo.', 'red');
+        console.log("En efecto, has ganado");
       } 
       else if (!this.tablero.celdasVacias())
       {
