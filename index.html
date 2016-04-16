@@ -5,11 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="An invincible game." />
     <title>Alpha Toe</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <link rel="stylesheet" href="w3.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="http://vignette3.wikia.nocookie.net/accelworld/images/5/5f/Chip_example.jpg/revision/latest?cb=20130827160806&amp;path-prefix=es">
-    <script src="javascripts/scale.fix.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -24,17 +22,40 @@
     <![endif]-->
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Juego Recursivo</h1>
-        <p>Un juego administrado por Alpha.</p>
-        <ul>
-        	<li><a href="https://pablo-ivan.github.io">Página <strong>Principal</strong></a></li>
-          <li><a href="http://pablo-ivan.github.io/Alpha-System/">Alpha <strong>System</strong></a></li>
-          <li><a href="https://pablo-ivan.github.io/Recursive-Game/">Juego <strong>Recursivo</strong></a></li>
-          <li><a href="https://pablo-ivan.github.io/Predictive-Game/">Juego <strong>Predictivo</strong></a></li>
-        </ul>
-      </header>
+  	<!-- Navbar -->
+  <ul class="w3-navbar w3-indigo w3-card-2 w3-top w3-left-align w3-large">
+    <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+      <a class="w3-padding-large w3-hover-white w3-large w3-indigo" href="javascript:void(0);" onclick="toogle()">&#9776;</a>
+    </li>
+    <li>
+      <a href="https://pablo-ivan.github.io/" class="w3-padding-large w3-hover-white">Principal</a>
+    </li>
+    <li class="w3-hide-small">
+      <a href="http://pablo-ivan.github.io/Alpha-System/" class="w3-padding-large w3-hover-white">Alpha</a>
+    </li>
+    <li class="w3-hide-small">
+      <a href="https://pablo-ivan.github.io/Predictive-Game/" class="w3-padding-large w3-hover-white"> Pong</a>
+    </li>
+    <li class="w3-hide-small">
+      <a href="#" class="w3-padding-large w3-indigo">Toe</a>
+    </li>
+    <li class="w3-hide-small"><a href="https://pablo-ivan.github.io/Diplomacy/" class="w3-padding-large w3-hover-white">Diplomacy</a>
+    </li>
+  </ul>
+  <!-- Navbar on small screens -->
+  <div id="demo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:51px">
+    <ul class="w3-navbar w3-left-align w3-large w3-indigo">
+      <li><a class="w3-padding-large" href="http://pablo-ivan.github.io/Alpha-System/">Alpha</a>
+      </li>
+      <li><a class="w3-padding-large" href="https://pablo-ivan.github.io/Predictive-Game/">Pong</a>
+      </li>
+      <li><a class="w3-padding-large" href="#">Toe</a>
+      </li>
+      <li><a class="w3-padding-large" href="https://pablo-ivan.github.io/Diplomacy/">Diplomacy</a>
+      </li>
+    </ul>
+  </div>
+    <div class="w3-container w3-row-padding w3-padding-64">
       <section>
         <h3>
 	        <span class="octicon octicon-link"></span>Tic-Tac-Toe
@@ -57,10 +78,14 @@
 		<div id="consola"></div>
       </section>
     </div>
-    <footer>
+    <footer class="w3-container w3-padding-32 w3-center w3-indigo">
       <p>Proyecto mantenido por <a href="https://github.com/Pablo-Ivan">Pablo-Ivan</a></p>
     </footer>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     <script src="main.js"></script>
+    <script>
+    	function toogle() {
+    		document.getElementById("demo").classList.toggle("w3-show");
+  		}
+    </script>
   </body>
 </html>
