@@ -96,7 +96,7 @@ Juego.prototype.reset = function () {
   }
   this.partidas++;
   this.estado = ESTADO.JUGANDO;
-  this.mostrarMensaje('Player 1 has a turn, 'red');
+  this.mostrarMensaje('Player 1 has a turn', 'red');
   this.tablero.dibujar();
 };
 Juego.prototype.logica = function (posicion) {
