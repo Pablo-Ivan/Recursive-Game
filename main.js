@@ -12,49 +12,32 @@ var ESTADO = {
   TERMINADO: 2
 };
 function Tablero() {
-  this.panel = [
-  ];
-  this.celdas = [
-  ];
-  for (var i = 0; i < 9; i++)
-  {
+  this.panel = [];
+  this.celdas = [];
+  for (var i = 0; i < 9; i++) {
     this.celdas[i] = document.getElementById('celda' + (i + 1));
   }
 }
-Tablero.prototype.reset = function () {
-  this.panel = [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0
-  ];
+Tablero.prototype.reset = function() {
+  this.panel = [0, 0, 0, 0, 0, 0, 0, 0, 0];
 };
-Tablero.prototype.marcable = function (posicion) {
+Tablero.prototype.marcable = function(posicion) {
   return (this.panel[posicion] == 0);
 };
-Tablero.prototype.marcar = function (turno, posicion) {
+Tablero.prototype.marcar = function(turno, posicion) {
   this.panel[posicion] = turno;
 };
-Tablero.prototype.dibujar = function () {
+Tablero.prototype.dibujar = function() {
   var n = this.panel.length;
-  for (var i = 0; i < n; i++)
-  {
-    if (this.panel[i] == 0)
-    {
+  for (var i = 0; i < n; i++) {
+    if (this.panel[i] == 0) {
       this.celdas[i].innerHTML = '';
-    } 
-    else
-    {
+    } else {
       this.celdas[i].innerHTML = '<span style="color:' + ((this.panel[i] == JUGADOR.HUMANO) ? 'red' : 'blue') + ';">' + ((this.panel[i] == JUGADOR.HUMANO) ? 'X' : 'O') + '</span>';
     }
   }
 };
-Tablero.prototype.esGanador = function (jugador) {
+Tablero.prototype.esGanador = function(jugador) {
   //HORIZONTAL
   var bool = (this.panel[0] == jugador && this.panel[1] == jugador && this.panel[2] == jugador);
   bool = bool || (this.panel[3] == jugador && this.panel[4] == jugador && this.panel[5] == jugador);
